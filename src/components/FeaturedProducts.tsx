@@ -93,17 +93,17 @@ const FeaturedProducts = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
         >
-          <Button
-            as={Link}
-            to="/shop"
-            variant="default"
-            className="group relative px-6 py-6 text-lg overflow-hidden"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              View All Bikes <ArrowRight className="transition-transform group-hover:translate-x-1" />
-            </span>
-            <span className="absolute inset-0 bg-primary opacity-80 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-          </Button>
+          <Link to="/shop">
+            <Button
+              variant="default"
+              className="group relative px-6 py-6 text-lg overflow-hidden"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                View All Bikes <ArrowRight className="transition-transform group-hover:translate-x-1" />
+              </span>
+              <span className="absolute inset-0 bg-primary opacity-80 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
